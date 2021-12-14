@@ -2,13 +2,14 @@ package internal_test
 
 import (
 	"fmt"
-	"github.com/johnfercher/maroto/internal"
-	"github.com/johnfercher/maroto/internal/mocks"
-	"github.com/johnfercher/maroto/pkg/color"
-	"github.com/johnfercher/maroto/pkg/props"
+	"testing"
+
+	"github.com/arvindh123/maroto/internal"
+	"github.com/arvindh123/maroto/internal/mocks"
+	"github.com/arvindh123/maroto/pkg/color"
+	"github.com/arvindh123/maroto/pkg/props"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
-	"testing"
 )
 
 func TestNewSignature(t *testing.T) {

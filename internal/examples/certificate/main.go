@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/johnfercher/maroto/pkg/consts"
-	"github.com/johnfercher/maroto/pkg/pdf"
-	"github.com/johnfercher/maroto/pkg/props"
+	"github.com/arvindh123/maroto/pkg/consts"
+	"github.com/arvindh123/maroto/pkg/pdf"
+	"github.com/arvindh123/maroto/pkg/props"
 	"os"
 	"time"
 )

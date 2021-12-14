@@ -1,10 +1,10 @@
 package internal
 
 import (
+	"github.com/arvindh123/maroto/internal/fpdf"
+	"github.com/arvindh123/maroto/pkg/props"
 	"github.com/boombuler/barcode/code128"
 	"github.com/boombuler/barcode/qr"
-	"github.com/johnfercher/maroto/internal/fpdf"
-	"github.com/johnfercher/maroto/pkg/props"
 	"github.com/jung-kurt/gofpdf/contrib/barcode"
 )
 

@@ -1,9 +1,9 @@
 # Maroto 
 
-[![GoDoc](https://godoc.org/github.com/johnfercher/maroto?status.svg)](https://godoc.org/github.com/johnfercher/maroto)
-[![Travis](https://travis-ci.com/johnfercher/maroto.svg?branch=master)][travis] 
-[![Codecov](https://img.shields.io/codecov/c/github/johnfercher/maroto)](https://codecov.io/gh/johnfercher/maroto) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/johnfercher/maroto)](https://goreportcard.com/report/github.com/johnfercher/maroto)
+[![GoDoc](https://godoc.org/github.com/arvindh123/maroto?status.svg)](https://godoc.org/github.com/arvindh123/maroto)
+[![Travis](https://travis-ci.com/arvindh123/maroto.svg?branch=master)][travis] 
+[![Codecov](https://img.shields.io/codecov/c/github/arvindh123/maroto)](https://codecov.io/gh/arvindh123/maroto) 
+[![Go Report Card](https://goreportcard.com/badge/github.com/arvindh123/maroto)](https://goreportcard.com/report/github.com/arvindh123/maroto)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go#template-engines)  
 
 A Maroto way to create PDFs. Maroto is inspired in Bootstrap and uses [Gofpdf](https://github.com/jung-kurt/gofpdf). Fast and simple.
@@ -19,57 +19,57 @@ always when a new page appear, in this case, a header may have many rows, lines 
 * With `go get`:
 
 ```bash
-go get -u github.com/johnfercher/maroto
+go get -u github.com/arvindh123/maroto
 ```
 
 ## Features
 ![result](internal/assets/images/diagram.png)
 
 #### Constructors
-* [New](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#NewMaroto)
-* [NewCustomSize](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#NewMarotoCustomSize)
+* [New](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#NewMaroto)
+* [NewCustomSize](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#NewMarotoCustomSize)
 
 #### Grid System
-* [Row](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Row)
-* [Col](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Col)
-* [ColSpace](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.ColSpace)
-* [AddPage](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.AddPage)
+* [Row](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Row)
+* [Col](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Col)
+* [ColSpace](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.ColSpace)
+* [AddPage](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.AddPage)
 
 #### Components To Use Inside a Col
-* [Text w/ automatic new lines](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Text)
-* [Signature](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Signature)
-* Image ([From file](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.FileImage) or [Base64](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Base64Image))
-* [QrCode](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.QrCode)
-* [Barcode](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Barcode)   
+* [Text w/ automatic new lines](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Text)
+* [Signature](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Signature)
+* Image ([From file](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.FileImage) or [Base64](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Base64Image))
+* [QrCode](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.QrCode)
+* [Barcode](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Barcode)   
     
 #### Components To Use Outside a Row
-* [TableList](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.TableList)
-* [Line](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.Line)
+* [TableList](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.TableList)
+* [Line](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.Line)
     
 #### Components To Wrap Row, TableList and Line
-* [RegisterHeader](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.RegisterHeader)
-* [RegisterFooter](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.RegisterFooter)
+* [RegisterHeader](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.RegisterHeader)
+* [RegisterFooter](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.RegisterFooter)
 
 #### Saving PDF
-* [Output](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.Output)
-* [OutputFileAndClose](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.OutputFileAndClose)
+* [Output](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.Output)
+* [OutputFileAndClose](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.OutputFileAndClose)
 
 #### Customizations   
-* [Properties](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/props?tab=doc): most of the components has properties which you can use to customize appearance and behavior.
-* [SetBorder](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.SetBorder): Used to draw rectangles in every row and column
-* [SetBackgroundColor](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.SetBackgroundColor): Used to change the background color of one cell.
-* [SetPageMargins](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf?tab=doc#PdfMaroto.SetPageMargins): Customize the page margins
-* [SetAliasNbPages](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.SetAliasNbPages): Set placeholder to use in texts for total count of pages
-* [SetFirstPageNb](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.SetFirstPageNb): Set first number for page numbering
-* [AddUTF8Font](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.AddUTF8Font): Add a custom utf8 font
-* [SetProtection](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.SetProtection)
-* [SetCompression](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.SetCompression) Set/ unset compression for a page. Default value is on 
-* [SetDefaultFontFamily](https://pkg.go.dev/github.com/johnfercher/maroto/pkg/pdf#PdfMaroto.SetProtection): Define a default font family, useful to use with a custom font.
+* [Properties](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/props?tab=doc): most of the components has properties which you can use to customize appearance and behavior.
+* [SetBorder](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.SetBorder): Used to draw rectangles in every row and column
+* [SetBackgroundColor](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.SetBackgroundColor): Used to change the background color of one cell.
+* [SetPageMargins](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf?tab=doc#PdfMaroto.SetPageMargins): Customize the page margins
+* [SetAliasNbPages](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.SetAliasNbPages): Set placeholder to use in texts for total count of pages
+* [SetFirstPageNb](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.SetFirstPageNb): Set first number for page numbering
+* [AddUTF8Font](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.AddUTF8Font): Add a custom utf8 font
+* [SetProtection](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.SetProtection)
+* [SetCompression](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.SetCompression) Set/ unset compression for a page. Default value is on 
+* [SetDefaultFontFamily](https://pkg.go.dev/github.com/arvindh123/maroto/pkg/pdf#PdfMaroto.SetProtection): Define a default font family, useful to use with a custom font.
 * Automatic New Page: New pages are generated automatically when needed.
 * 100% Unicode
 
 #### Roadmap
-* Updated in [Issues](https://github.com/johnfercher/maroto/issues)
+* Updated in [Issues](https://github.com/arvindh123/maroto/issues)
 
 ## Examples
 In the [PDFs](internal/examples/pdfs) folder there are the PDFs generated
@@ -91,10 +91,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/johnfercher/maroto/pkg/color"
-	"github.com/johnfercher/maroto/pkg/consts"
-	"github.com/johnfercher/maroto/pkg/pdf"
-	"github.com/johnfercher/maroto/pkg/props"
+	"github.com/arvindh123/maroto/pkg/color"
+	"github.com/arvindh123/maroto/pkg/consts"
+	"github.com/arvindh123/maroto/pkg/pdf"
+	"github.com/arvindh123/maroto/pkg/props"
 	"os"
 	"time"
 )
@@ -260,9 +260,9 @@ func main() {
 
 * [Medium Article: Creating PDFs using Golang](https://medium.com/@johnathanfercher/creating-pdfs-using-golang-98b722e99d6d)
 
-[travis]: https://travis-ci.com/johnfercher/maroto
+[travis]: https://travis-ci.com/arvindh123/maroto
 [test]: test.sh
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/johnfercher/maroto.svg)](https://starchart.cc/johnfercher/maroto)
+[![Stargazers over time](https://starchart.cc/arvindh123/maroto.svg)](https://starchart.cc/arvindh123/maroto)
