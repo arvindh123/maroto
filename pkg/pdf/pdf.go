@@ -45,7 +45,7 @@ type Maroto interface {
 	SetBackgroundColor(color color.Color)
 	SetAliasNbPages(alias string)
 	SetFirstPageNb(number int)
-	SetMaxColumns(number int)
+	SetMaxColumns(number uint)
 	GetBorder() bool
 	GetPageSize() (width float64, height float64)
 	GetCurrentPage() int
